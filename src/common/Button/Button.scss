@@ -1,0 +1,13 @@
+@import '../../styles/global.scss';
+
+.button {
+  &--helper {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: $gap-regular 0;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: $c-white;
+  }
+}

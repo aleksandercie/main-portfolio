@@ -1,0 +1,35 @@
+@import '../../styles/global.scss';
+
+.about {
+  position: relative;
+
+  &__container {
+    position: relative;
+    min-height: 40vh;
+    overflow: hidden;
+
+    @media only screen and (min-width: $breakpoints-md) {
+      min-height: 60vh;
+    }
+
+    @media only screen and (min-width: $breakpoints-xl) {
+      min-height: 82vh;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    width: 110%;
+    left: $gap-regular;
+    top: 0;
+    object-position: top;
+
+    @media only screen and (min-width: $breakpoints-sm) {
+      left: $gap-large;
+    }
+
+    @media only screen and (min-width: $breakpoints-md) {
+      left: 4%;
+    }
+  }
+}

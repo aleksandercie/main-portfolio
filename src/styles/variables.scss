@@ -1,0 +1,120 @@
+@use 'sass:math';
+
+/* Base Colors
+************************************************************** */
+
+$c-white: #fff;
+$c-black: #000000;
+$c-red: #b33a3a;
+
+$c-blue: #71d4bc;
+$c-dark: #101111;
+$c-linear: linear-gradient(
+  90deg,
+  rgba(33, 33, 33, 1) 0%,
+  rgba(16, 17, 17, 1) 64%,
+  rgba(0, 0, 0, 1) 100%
+);
+
+/* Borders
+************************************************************** */
+
+$border: 1px solid rgba(255, 255, 255, 0.1);
+$border-white: solid 3px $c-white;
+$border-blue: solid 3px $c-blue;
+
+/* Paddings, Margins
+************************************************************** */
+
+$gap-xxsmall: 5px;
+$gap-xsmall: 10px;
+$gap-small: 15px;
+$gap-regular: 20px;
+$gap-large: 30px;
+$gap-xlarge: 40px;
+$gap-xxlarge: 50px;
+
+/* Z-index
+************************************************************** */
+
+$z-index: 2;
+$z-index-helper: 5;
+$z-index-logo: 10;
+$z-index-menu: 20;
+
+/* Wrappers
+************************************************************** */
+
+$wrapper: 2400px;
+$wrapper-middle: 900px;
+$wrapper-mobile: 480px;
+
+/* Breakpoints
+************************************************************** */
+
+$breakpoints-xs: 480px;
+$breakpoints-sm: 576px;
+$breakpoints-md: 768px;
+$breakpoints-lg: 992px;
+$breakpoints-xl: 1200px;
+$breakpoints-xxl: 1700px;
+
+/* Transitions
+************************************************************** */
+
+$transition-intro: transform 0.9s ease-out, opacity 0.4s ease-out;
+$transition-hover: width 0.4s ease-out;
+
+/* Keyframes
+************************************************************** */
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes show-image {
+  from {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30vh);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* animations
+************************************************************** */
+
+$animation-bounce: bounce 0.7s cubic-bezier(0.5, 0.6, 0.6, 1) infinite alternate;
+$animation-show-image: show-image 0.7s cubic-bezier(0.5, 0.6, 0.6, 1);
+$animation-fade-down: fade-in-up 0.7s cubic-bezier(0.5, 0.6, 0.6, 1);
+$animation-fade-in: fade-in 0.7s cubic-bezier(0.5, 0.6, 0.6, 1);

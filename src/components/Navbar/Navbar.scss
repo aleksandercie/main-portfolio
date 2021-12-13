@@ -1,0 +1,66 @@
+@import '../../styles/global.scss';
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 0 auto;
+  padding: 0 $gap-regular;
+  max-width: $wrapper;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-sizing: border-box;
+  z-index: $z-index-logo;
+
+  &--black {
+    background-color: $c-black;
+
+    @media only screen and (min-width: $breakpoints-md) {
+      background-color: transparent;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: $gap-xsmall;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: $c-white;
+    animation: $animation-fade-in;
+    animation-delay: 0.2s;
+    animation-fill-mode: backwards;
+    max-height: 40px;
+
+    &:hover > .navbar__line::after {
+      width: 76%;
+    }
+  }
+
+  &__dot {
+    position: relative;
+    color: $c-blue;
+    bottom: 18px;
+    left: 2px;
+    font-size: 4rem;
+  }
+
+  &__line {
+    display: block;
+
+    &::after {
+      content: '';
+      width: 0;
+      border-bottom: $border-blue;
+      position: absolute;
+      left: 10px;
+      top: 42px;
+      transition: $transition-hover;
+    }
+  }
+}

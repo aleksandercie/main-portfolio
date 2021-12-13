@@ -1,0 +1,12 @@
+@import '../../styles/global.scss';
+
+.container {
+  &--section {
+    overflow: hidden;
+    padding: $gap-xxlarge 0;
+
+    @media only screen and (min-width: $breakpoints-sm) {
+      padding: $gap-xxlarge 0;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+@import '../../styles/global.scss';
+
+.typography {
+  &__title {
+    &--secondary,
+    &--main {
+      line-height: 1.2;
+      padding: 0 $gap-regular;
+
+      @media only screen and (min-width: $breakpoints-sm) {
+        padding: 0 $gap-large;
+      }
+    }
+
+    &--main {
+      max-width: 340px;
+      font-size: 4rem;
+      margin: 10vh 0 5vh;
+
+      @media only screen and (min-width: $breakpoints-md) {
+        max-width: 660px;
+        margin: 20vh auto 10vh;
+        font-size: 6rem;
+      }
+
+      @media only screen and (min-width: $breakpoints-xxl) {
+        font-size: 9rem;
+        max-width: 1000px;
+      }
+    }
+
+    &--secondary {
+      font-size: 3rem;
+      margin: $gap-regular 0;
+
+      @media only screen and (min-width: $breakpoints-md) {
+        font-size: 5rem;
+        margin: $gap-regular auto;
+      }
+
+      @media only screen and (min-width: $breakpoints-xxl) {
+        font-size: 7rem;
+      }
+    }
+  }
+
+  &__subtitle {
+    margin: $gap-regular 0;
+    font-size: 3rem;
+
+    @media only screen and (min-width: $breakpoints-lg) {
+      margin: $gap-xxlarge 0 $gap-regular;
+      font-size: 4rem;
+    }
+  }
+
+  &__dot {
+    color: $c-blue;
+    font-size: 4.5rem;
+    margin-left: $gap-xxsmall;
+
+    @media only screen and (min-width: $breakpoints-lg) {
+      font-size: 6rem;
+    }
+  }
+
+  &__description {
+    font-size: 1.8rem;
+    margin: $gap-small 0;
+  }
+
+  &__link {
+    font-weight: 600;
+    font-size: 1.8rem;
+  }
+
+  &--center {
+    text-align: center;
+  }
+}

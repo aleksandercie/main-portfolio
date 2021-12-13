@@ -1,0 +1,25 @@
+@import '../../styles/global.scss';
+
+.work {
+  &__container {
+    max-width: 960px;
+    margin: $gap-xxlarge auto;
+  }
+
+  &__github {
+    margin: $gap-xxlarge 0;
+  }
+
+  &__description,
+  &__links {
+    margin: $gap-small;
+  }
+
+  &__description {
+    padding: $gap-xsmall $gap-regular;
+
+    @media only screen and (min-width: $breakpoints-sm) {
+      padding: $gap-xsmall $gap-large;
+    }
+  }
+}

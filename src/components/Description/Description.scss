@@ -1,0 +1,11 @@
+@import '../../styles/global.scss';
+
+.description {
+  max-width: $wrapper-middle;
+  margin: 0 auto $gap-xxlarge;
+  padding: 0 $gap-regular;
+
+  @media only screen and (min-width: $breakpoints-sm) {
+    padding: 0 $gap-large;
+  }
+}

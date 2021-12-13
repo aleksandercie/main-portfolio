@@ -1,0 +1,42 @@
+@import './variables.scss';
+@import './normalize.scss';
+@import './fonts.scss';
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  padding: 0;
+  background: $c-black;
+  color: $c-white;
+  line-height: 1.5;
+  font-family: 'Lato', sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $c-white;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.scroll--prevent {
+  overflow: hidden;
+}
