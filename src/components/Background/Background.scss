@@ -20,6 +20,7 @@
     height: 100%;
     position: relative;
     object-fit: cover;
+    object-position: top;
     animation: $animation-show-image;
 
     @media only screen and (min-width: $breakpoints-md) {
@@ -34,10 +35,6 @@
     @media only screen and (min-width: $breakpoints-xl) {
       top: 8%;
       width: 70%;
-    }
-
-    @media only screen and (min-width: $breakpoints-xxl) {
-      object-position: top;
     }
   }
 }
