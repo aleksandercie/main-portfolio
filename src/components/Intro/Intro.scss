@@ -1,7 +1,8 @@
 @import '../../styles/global.scss';
 
 .intro {
-  height: 86vh;
+  position: absolute;
+  top: 26%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -14,6 +15,7 @@
 
   @media only screen and (min-width: $breakpoints-sm) {
     font-size: 8rem;
+    top: 22%;
   }
 
   @media only screen and (min-width: $breakpoints-lg) {
