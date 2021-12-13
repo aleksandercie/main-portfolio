@@ -20,6 +20,7 @@
 
     @media only screen and (min-width: $breakpoints-md) {
       object-position: left;
+      filter: brightness(0.8);
     }
 
     @media only screen and (min-width: $breakpoints-lg) {
