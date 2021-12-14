@@ -15,11 +15,12 @@
 
   @media only screen and (min-width: $breakpoints-sm) {
     font-size: 8rem;
-    top: 22%;
+    top: 12%;
   }
 
   @media only screen and (min-width: $breakpoints-lg) {
     font-size: 10rem;
+    top: 20%;
   }
 
   &__item {
