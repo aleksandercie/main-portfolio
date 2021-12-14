@@ -6,6 +6,6 @@
 Project is created with:
 * Gatsby
 * Sass
-* classnames
+* Classnames
 * Gatsby plugin image
 * Gatsby plugin scroll reveal
