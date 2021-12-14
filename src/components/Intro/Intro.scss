@@ -19,7 +19,7 @@
   }
 
   @media only screen and (min-width: $breakpoints-lg) {
-    font-size: 12rem;
+    font-size: 10rem;
   }
 
   &__item {
@@ -38,7 +38,7 @@
     }
 
     @media only screen and (min-width: $breakpoints-lg) {
-      height: 150px;
+      height: 90px;
     }
 
     &:hover > .intro__item--main {
