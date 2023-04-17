@@ -15,6 +15,22 @@ export const work = [
       },
     ],
   },
+    {
+    id: 52618,
+    type: 'project',
+    name: 'Dannach website',
+    link: true,
+    links: [
+      {
+        url: 'https://aleksandercie.github.io/Dannach/',
+        name: 'check demo',
+      },
+      {
+        name: 'github link',
+        url: 'https://github.com/aleksandercie/Dannach/tree/main',
+      },
+    ],
+  },
   {
     id: 13213,
     type: 'soon',
