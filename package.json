@@ -12,6 +12,7 @@
     "gatsby-plugin-manifest": "^2.12.1",
     "gatsby-plugin-offline": "^3.10.2",
     "gatsby-plugin-react-helmet": "^3.10.0",
+    "gatsby-plugin-sass": "5.8.0",
     "gatsby-plugin-scroll-reveal": "^0.0.7",
     "gatsby-plugin-sharp": "^2.14.4",
     "gatsby-source-filesystem": "^2.11.1",
@@ -23,6 +24,7 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "node-sass": "^8.0.0",
     "prettier": "^2.4.1"
   },
   "keywords": [
